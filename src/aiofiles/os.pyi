@@ -39,9 +39,6 @@ __all__ = [
     "getcwd",
 ]
 
-if sys.platform != "win32":
-    __all__ += ["statvfs", "sendfile"]
-
 path = ospath
 
 async def stat(
@@ -218,3 +215,5 @@ if sys.platform != "win32":
         executor: Executor | None = ...,
     ) -> int: ...  # FreeBSD and Mac OS X only
     async def statvfs(path: FileDescriptorOrPath) -> statvfs_result: ...  # Unix only
+
+    __all__ += ["statvfs", "sendfile"]
