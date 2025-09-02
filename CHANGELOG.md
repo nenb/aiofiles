@@ -2,6 +2,7 @@
 
 ## 25.1.0 (UNRELEASED)
 
+- Added type stubs from [typeshed](https://github.com/python/typeshed)
 - Switch to [uv](https://docs.astral.sh/uv/) + add Python v3.14 support.
   ([#219](https://github.com/Tinche/aiofiles/pull/219))
 - Add `ruff` formatter and linter.
